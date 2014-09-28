@@ -1,0 +1,264 @@
+/*===================================================================
+*
+* JSFest.com
+* Made by the community, for the community
+* Created by @mikeal
+* Designed and coded by @fox
+*
+* ❤︎ ✌︎
+*
+===================================================================*/
+
+html {
+  font-size: 100%;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  border-top: 10px solid black;
+  font: 500 1.125rem/1.5 "ff-meta-serif-web-pro", Georgia, Times, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+::-moz-selection {
+  background: #FFEB00;
+}
+
+::selection {
+  background: #FFEB00;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+a {
+  color: black;
+  border-bottom: 3px solid #FFEB00;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #CAB000;
+  border-color: #CAB000;
+  transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+}
+
+/*-------------------------------------------------------------------
+*
+* Headings
+*
+-------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+h1 span {
+  display: inline-block;
+  margin-right: .5rem;
+  padding: 1.5rem 1rem 0 1rem;
+  background-color: #FFEB00;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.lead {
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+
+/*-------------------------------------------------------------------
+*
+* Event
+*
+-------------------------------------------------------------------*/
+
+.event {
+  position: relative;
+  border: 5px solid black;
+  margin-bottom: 1.25rem;
+}
+
+.event h2 {
+  margin-top: 0;
+}
+
+.event p {
+  margin: 0;
+}
+
+.event-description {
+  padding: 1rem;
+  color: white;
+  background-color: black;
+}
+
+.event-description:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.event-description-inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.event-description a {
+  color: white;
+}
+
+.event-past-badge {
+  display: inline-block;
+  margin-bottom: .5rem;
+  padding: .5rem 1rem;
+  background: red;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.event-past-badge,
+.photo-credit {
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+}
+
+.photo-credit {
+  position: absolute;
+  border: none;
+  color: white;
+  font-size: .8rem;
+  opacity: .8;
+}
+
+/*-------------------------------------------------------------------
+*
+* Footer
+*
+-------------------------------------------------------------------*/
+
+footer {
+  margin: 3rem 0;
+  color: #333;
+}
+
+footer nav li {
+  display: inline-block;
+}
+
+footer nav a {
+  margin: 0 .3125rem;
+}
+
+/*-------------------------------------------------------------------
+*
+* Mobile
+*
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  header {
+    margin-top: 1rem;
+  }
+
+  .event img {
+    max-width: 100%;
+  }
+
+  .event-description {
+    margin-top: -.5rem;
+  }
+
+  .photo-credit {
+    top: .25rem;
+    left: .5rem;
+  }
+
+}
+
+/*-------------------------------------------------------------------
+*
+* Desktop
+*
+-------------------------------------------------------------------*/
+
+@media screen and (min-width: 769px) {
+
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-top: 3rem;
+  }
+
+  .lead {
+    margin-bottom: 4rem;
+  }
+
+  .event {
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .event img,
+  .event-description {
+    float: left;
+  }
+
+  .event img {
+    width: 60%;
+  }
+
+  .event-description {
+    width: 40%;
+    height: 100%;
+  }
+
+  .photo-credit {
+    bottom: .25rem;
+    left: .5rem;
+  }
+
+}
